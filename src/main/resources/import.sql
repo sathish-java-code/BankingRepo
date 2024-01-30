@@ -1,0 +1,1 @@
+INSERT INTO school(name, status) VALUES('Aasir', 'Active');
