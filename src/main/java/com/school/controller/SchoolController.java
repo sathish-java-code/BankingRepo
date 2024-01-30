@@ -17,11 +17,14 @@ import com.school.service.SchoolService;
 @RequestMapping(value = "/test")
 public class SchoolController {
 
+	
+
 	@Autowired
 	private SchoolService schoolService;
 
 	@PostMapping(value = "/create")
 	public SchoolEntity create(@RequestBody SchoolEntity entity) {
+		
 		return schoolService.create(entity);
 	}
 
